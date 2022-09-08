@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>september challenge</title>
+    <style>
+    *{
+      border-box: box-sizing;
+    }
+    body{
+      background: #1F0B4F;
+    }
+      .head{
+        margin-top: ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .name{
+        color: #87A82E;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 20px;
+        transform: (20, 20);
+        letter-spacing:2px;
+      }
+      .ghalad{
+        color: white;
+        font-weight: 200;
+      }
+      .hidden{
+        background: none;
+        border: none;
+        color: white;
+        font-size: 15px;
+text-transform: uppercase;
+      }
+      
+      .friday{
+        display: block;
+        justify-items: center;
+        flex-direction: column;
+        background: #7E83BD;
+        margin-top: 50px;
+        width: 90%;
+        height: 30px;
+        border-radius:30px ;
+  }
+      .save{
+        display: block;
+        background: white;
+        width: 20%;
+        border-radius: 30px;
+        margin-top: 20px;
+}
+.text{
+height: 100vh;
+}
+.show{
+animation-name: Margin;
+animation-duration: 7s;
+animation-iteration-count: ;
+      }
+@keyframes myMove{
+0%{opacity: -1;
+z-index: -1;
+}
+100%{
+opacity:1;
+z-index: 1;
+}
+}
+@keyframes Margin{
+0%{
+margin-left: 250px;
+}
+100%{
+margin-left: 0px;
+}
+}
+    </style>
+</head>
+<header>
+<div class="text"></div>
+  <div class="section">
+  <div class="head">
+    <label class="name">Fx<span class="ghalad">Ghaladhium</label>
+    <button class="hidden"> hidden</button>
+  </div>
+</header>
+<div class="friday">
+  <div class="save">
+    <label class="percent">70% save</label>
+</div>
+<div class="myText">
+<p class="black"> for the best black friday</p>
+  </div>
+</div>
+</div>
+<script>
+window.addEventListener("scroll", function(){
+const dive = document.querySelector(".save")
+const friday = document.querySelector(".friday")
+const scrl = window.pageYoffset;
+if(scrl > 0){
+dive.classList.add("show");
+friday.classList.add("show")
+}
+})
+
+</body>
+
+</html>
